@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .confirmation-container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4caf50;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .confirmation-details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: left;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .go-home-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .go-home-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="confirmation-container">
+    <h2>Booking Confirmed!</h2>
+    <p>Thank you for booking with us. Your goods transport is successfully scheduled.</p>
+
+    <div class="confirmation-details">
+        <p><strong>Name:</strong> John Doe</p> <!-- Replace with actual dynamic data -->
+        <p><strong>Pick-up Date:</strong> 20th October, 2024</p> <!-- Replace with actual dynamic data -->
+        <p><strong>Pick-up Location:</strong> Mumbai</p> <!-- Replace with actual dynamic data -->
+        <p><strong>Destination:</strong> Delhi</p> <!-- Replace with actual dynamic data -->
+        <p><strong>Payment Method:</strong> Paytm</p> <!-- Replace with actual dynamic data -->
+    </div>
+
+    <button class="go-home-btn" onclick="goHome()">Back to Home</button>
+</div>
+
+<script>
+    // Redirect to homepage
+    function goHome() {
+        window.location.href = 'FrontPage.html';  // Replace with your actual home page URL
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Transport Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Header Section -->
+        <div class="profile-header animate__animated animate__fadeIn">
+            <div class="profile-photo-container">
+                <img src="truck-photo.jpg" alt="Truck" id="profile-photo" class="profile-photo animate__animated animate__fadeIn">
+                <input type="file" id="upload-photo" class="upload-photo" accept="image/*">
+            </div>
+            <div class="profile-info">
+                <h1 id="company-name" class="animate__animated animate__fadeIn">Truck Transport Inc.</h1>
+                <p id="description" class="animate__animated animate__fadeIn">Your trusted partner for reliable and efficient transport services.</p>
+                <button id="edit-info" class="animate__animated animate__fadeIn">Edit Profile</button>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services animate__animated animate__fadeIn">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Furniture Transport</li>
+                <li>Long-Distance Hauling</li>
+                <li>Local Deliveries</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact animate__animated animate__fadeIn">
+            <h2>Contact Us</h2>
+            <p>Email: <span id="email">info@trucktransport.com</span></p>
+            <p>Phone: <span id="phone">+123 456 7890</span></p>
+        </div>
+    </div>
+
+    <!-- Profile Set Modal -->
+    <div id="profile-set" class="profile-set animate__animated animate__fadeIn">
+        <div class="profile-set-content">
+            <h2>Edit Profile</h2>
+            <form id="profile-form">
+                <input type="text" id="new-company-name" placeholder="Enter new company name">
+                <input type="text" id="new-description" placeholder="Enter new description">
+                <input type="file" id="new-photo" accept="image/*" placeholder="Upload new profile photo">
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
